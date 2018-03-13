@@ -1,0 +1,242 @@
+@font-face {
+  font-family: 'Lazurski';
+  src:
+       url('../fonts/Lazurski.ttf') format('ttf');
+}
+
+body {
+  font-family: 'Lazurski', serif;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+}
+
+p {
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+li {
+  font-size: 20px;
+}
+
+
+.intro {
+  height: 5vh;
+  background-position: center;
+  display: flex;
+  position: relative;
+}
+
+nav.header-nav {
+  font-family: 'GT Walsheim Pro Trial', 'Helvetica', 'Arial', sans-serif;
+  font-size: 19px;
+  z-index: 10002;
+}
+
+.header-navright {
+  font-size: 26px;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+/* .header-nav > a:hover {
+  color: #F26DF9;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+} */
+
+span.title_menu:hover {
+  color: red;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.title_menu {
+  cursor: pointer;
+}
+
+ul.elements_title_menu {
+  display: none;
+  list-style: none;
+}
+
+.open > ul.elements_title_menu {
+  display: block;
+}
+
+.title {
+  font-family: 'Arial', serif;
+  font-style: italic;
+  font-size: 60px;
+  line-height: 80px;
+  color: black;
+  text-transform: uppercase;
+  margin: auto;
+  margin-bottom: 25px;
+  }
+
+header.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  z-index: 1000;
+  padding: 15px 22.5px 0 22.5px;
+}
+
+.panel {
+  top: 140px;
+  left: 540px;
+  width: 375px;
+  height: 165px;
+  background-color: #FCFCFC;
+  z-index: 10000;
+  border: 1px solid #000;
+  position: fixed;
+}
+
+.name {
+  vertical-align: middle;
+  border-bottom: 1px solid #000;
+  line-height: 22px;
+  padding: 1px 20px;
+  font-size: 15px;
+}
+
+.quit {
+  height: 26px;
+  width: 26px;
+  border: 1px solid;
+  position: absolute;
+  left: 375px;
+  top: -1px;
+  background-color: #FCFCFC;
+}
+
+.quit img {
+  margin: 6px;
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+
+#elements li img {
+  display: inline-block;
+  filter: grayscale();
+}
+
+#elements li a:hover {
+  text-decoration: underline;
+}
+
+#infos {
+  padding: 20px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+#elements li a {
+  font-size: 15px;
+  font-family: 'Lazurski', serif;
+  padding-bottom: 5px;
+  display: inline;
+  background-color: white;
+  cursor: pointer;
+}
+
+
+#infos ul li span {
+  font-size: 16px;
+  width: 90px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#infos ul li p {
+  font-size: 17px;
+  padding-top: 5px;
+  width: 200px;
+  display: inline;
+  align-items: baseline;
+}
+
+.things-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  min-height: calc(100vh - 90px);
+  padding: 0 15px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.item {
+  height: 300px;
+  align-self: center;
+  flex-basis: calc(20% - 30px);
+  margin: 40px 40px 40px 40px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 300px;
+  min-width: 180px;
+  text-align: center;
+  font-family: 'Lazurski', serif;
+}
+
+a.small {
+  height: 20%;
+  font-size: 12px;
+  line-height: 1.4;
+  padding-top: 7px;
+  color: #777;
+  display: inline-block;
+
+}
+
+.item img  {
+  align-self: center
+  position: relative;
+  display: block;
+  width: 250px;
+  filter: grayscale();
+  cursor: url(../images/слива.png), default;
+
+}
+
+img:hover {
+  filter: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.draggable {
+  cursor: pointer;
+}

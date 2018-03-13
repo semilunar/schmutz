@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="images/favicon(1).ico" type="image/x-icon">
+  <title>SCHMUTZ CATALOGUE</title>
+
+  <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+
+  <section class="intro">
+  <header class="header">
+    <nav class="header-nav">
+      <div id="elements" class="menu">
+      <span class="header-navleft title_menu">click me</span>
+         <ul class='elements_title_menu'>
+          <li>
+            <img src="images/star.png">
+            <a>художники</a>
+          </li>
+          <li>
+            <img src="images/nostar.png">
+            <a>неизвестно</a>
+          </li>
+          <li>
+            <img src="images/tag.png">
+            <a>граффити</a>
+          </li>
+          <li>
+            <img src="images/sticker.png">
+            <a>стикер</a>
+          </li>
+          <li>
+            <img src="images/other.png">
+            <a>прочее</a>
+          </li>
+        </ul>
+      </div>
+      <a class="header-navright">
+        <img class="logo" src="images/logos.png">
+      </a>
+    </nav>
+  </header>
+  </section>
+
+  <!-- <div class="sticker draggable" style="width: 404px; height: 500px; background-color: black; margin-top: 103px; left: 300px; position: fixed; z-index: 9999999"></div>
+  <div class="sticker draggable" style="width: 600px; height: 890px; background-color: black; margin-top: 500px; left: 500px; position: fixed; z-index: 9999999"></div>
+  <div class="sticker draggable" style="width: 500px; height: 800px; background-color: black; margin-top: 700px; left: 600px; position: fixed; z-index: 9999999"></div>
+  <div class="sticker draggable" style="width: 404px; height: 500px; background-color: black; margin-top: 500px; left: 200px; position: fixed; z-index: 9999999"></div>
+  <div class="sticker draggable" style="width: 600px; height: 890px; background-color: black; margin-top: 180px; left: 542px; position: fixed; z-index: 9999999"></div>
+  <div class="sticker draggable" style="width: 304px; height: 600px; background-color: black; margin-top: 650px; left: 300px; position: fixed; z-index: 9999999"></div> -->
+
+
+  <div id="hidden_content" class="panel draggable">
+    <div class="name">Об артефакте</div>
+    <div class="quit">
+      <img src="images/cross.svg">
+    </div>
+    <div id="infos">
+      <ul>
+        <li>
+          <span>Название:</span>
+          <p class="thing-name">Угар</p>
+        </li>
+        <li>
+          <span>Автор:</span>
+          <p class="thing-author">Мой дед</p>
+        </li>
+        <li>
+          <span>Год:</span>
+          <p class="thing-year">2017-настоящее время</p>
+        </li>
+        <li>
+          <span>Локация:</span>
+          <p class="thing-location">Зеленоград</p>
+        </li>
+        <li>
+          <span></span>
+          <p></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <main class="catalogue">
+
+    <h1 align="center" class="title">
+      <a>а</a>
+    </h1>
+
+  <section class="things-items">
+    <div data-name="Угар" data-author="Мой дед" data-year="2014" data-location="Зеленоград" class="item">
+      <img src="images/угар.jpg">
+      <a class="small">Угар</a>
+    </div>
+
+    <div class="item" data-name="лицо" data-author="zimna crew" data-year="2016–настоящее время" data-location="бауманская ул., д. 31">
+      <img src="images/ок12.jpg">
+      <a class="small">Лицо</a>
+    </div>
+
+    <div class="item" data-name="лицо" data-author="zimna crew" data-year="2016–настоящее время" data-location="3-я улица строителей д. 2">
+      <img src="images/ок10.jpg">
+      <a class="small">Лицо</a>
+    </div>
+
+    <div class="item" data-name="ХВ" data-author="zimna crew" data-year="2017–настоящее время" data-location="ст. м. войковская">
+      <img src="images/хв.jpg">
+      <a class="small">ХВ</a>
+    </div>
+
+    <div class="item" data-name="ЗАЧЕМ" data-author="гр. ЗАЧЕМ" data-year="2015" data-location="улица с. эйзенштейна дом 2">
+      <img src="images/зачем.jpg">
+      <a class="small">ЗАЧЕМ</a>
+    </div>
+
+    <div class="item" data-name="-" data-author="-" data-year="2018" data-location="улица бауманская">
+      <img src="images/ок.jpg">
+      <a class="small">-</a>
+    </div>
+
+    <div class="item" data-name="Лицо" data-author="zimna crew" data-year="2017" data-location="район зюзино">
+      <img src="images/ок7.jpg">
+      <a class="small">Лицо</a>
+    </div>
+
+    <div class="item" data-name="sneksy tag" data-author="sneksy (sneekzy)" data-year="2017" data-location="хитровка">
+      <img src="images/sneksy.png">
+      <a class="small">sneksy tag</a>
+    </div>
+
+    <!-- <div class="item" data-name="Wisdom tooth" data-author="Ricardo Ionathan Miles" data-year="2015" data-location="Москва–Зеленоград">
+      <img src="images/зуб.jpg">
+      <a class="small">Wisdom tooth</a>
+    </div> -->
+
+    <div class="item" data-name="Спорт" data-author="-" data-year="2017" data-location="москва">
+      <img src="images/sport.jpg">
+      <a class="small">Спорт</a>
+    </div>
+
+    <div class="item" data-name="nook-tag" data-author="NOOK" data-year="2017–настоящее время" data-location="ст. м. китай-город">
+      <img src="images/nook.jpg">
+      <a class="small">NOOK tag</a>
+    </div>
+
+    <div class="item" data-name="Шахматный конь" data-author="Соколов" data-year="2015" data-location="улица бахрушина дом 15">
+      <img src="images/sokolov2.png">
+      <a class="small">Шахматный конь</a>
+    </div>
+
+    <div class="item" data-name="nook-tag" data-author="NOOK" data-year="2018" data-location="м. пионерская д. 30">
+      <img src="images/nook3.jpg">
+      <a class="small">NOOK-tag</a>
+    </div>
+
+    <div class="item" data-name="лицо" data-author="zimna crew" data-year="2015" data-location="москва">
+      <img src="images/ок11.jpg">
+      <a class="small">Лицо</a>
+    </div>
+
+    <div class="item" data-name="хв" data-author="zimna crew" data-year="2017" data-location="москва">
+      <img src="images/хв3.jpg">
+      <a class="small">ХВ</a>
+    </div>
+
+    <div class="item"  data-name="хв" data-author="zimna crew" data-year="2016" data-location="москва">
+      <img src="images/хв2.jpg">
+      <a class="small">ХВ</a>
+    </div>
+
+    <div class="item" data-name="Лиза" data-author="-" data-year="2017" data-location="ст. м. арбатская">
+      <img src="images/mona.jpg">
+      <a class="small">Лиза</a>
+    </div>
+
+    <div class="item" data-name="хв" data-author="zimna crew" data-year="2016" data-location="москва">
+      <img src="images/ок4.jpg">
+      <a class="small">Лицо</a>
+    </div>
+
+    <div class="item" data-name="Шахматный конь" data-author="Соколов" data-year="2015" data-location="улица бахрушина дом 15">
+      <img src="images/sokolov3.png">
+      <a class="small">Шахматный конь</a>
+    </div>
+
+    <div class="item" data-name="Лицо" data-author="zimna crew" data-year="2017" data-location="улица лесная">
+      <img src="images/ок9.jpg">
+      <a class="small">Лицо</a>
+    </div>
+
+    <div class="item" data-name="nook tag" data-author="NOOK" data-year="2017" data-location="москва">
+      <img src="images/nook4.png">
+      <a class="small">NOOK tag</a>
+    </div>
+
+
+  </section>
+
+
+</main>
+
+<script>
+var menuElem = document.getElementById('elements');
+var titleElem = menuElem.querySelector('.title_menu');
+titleElem.onclick = function() {
+  menuElem.classList.toggle('open');
+};
+
+</script>
+
+<script>
+var panel = document.getElementById("hidden_content");
+var item = menuElem.querySelector('.item');
+item.onclick = function() {
+  panel.classList.toggle('open');
+};
+
+</script>
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="javascripts/draggabilly.pkgd.min.js"></script>
+<script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.js"></script>
+<script src="javascripts/script.js"></script>
+
+</body>
+</html>
