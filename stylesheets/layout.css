@@ -9,6 +9,7 @@ body {
   font-size: 12px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FCFCFC;
 }
 
 * {
@@ -41,9 +42,12 @@ li {
 }
 
 nav.header-nav {
-  font-family: 'GT Walsheim Pro Trial', 'Helvetica', 'Arial', sans-serif;
-  font-size: 19px;
-  z-index: 10002;
+  /* font-family: 'GT Walsheim Pro Trial', 'Helvetica', 'Arial', sans-serif; */
+  /* font-family: "Arial"; */
+  margin-top: 10px;
+  margin-left: -5px;
+  font-size: 40px;
+  /* z-index: 10002; */
 }
 
 .header-navright {
@@ -58,15 +62,9 @@ nav.header-nav {
   margin-top: 20px;
 }
 
-/* .header-nav > a:hover {
-  color: #F26DF9;
-  cursor: pointer;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-} */
 
 span.title_menu:hover {
-  color: red;
+  color: #FF00FF;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
   cursor: pointer;
@@ -86,9 +84,7 @@ ul.elements_title_menu {
 }
 
 .title {
-  font-family: 'Arial', serif;
-  font-style: italic;
-  font-size: 60px;
+  font-size: 55px;
   line-height: 80px;
   color: black;
   text-transform: uppercase;
@@ -96,14 +92,18 @@ ul.elements_title_menu {
   margin-bottom: 25px;
   }
 
+.title:hover {
+  cursor: url(../images/f.png), default;
+}
+
 header.header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 50px;
-  z-index: 1000;
-  padding: 15px 22.5px 0 22.5px;
+  z-index: 100;
+  padding: 1px 12px 0 15px;
 }
 
 .panel {
@@ -111,7 +111,7 @@ header.header {
   left: 540px;
   width: 375px;
   height: 165px;
-  background-color: #FCFCFC;
+  background-color: white;
   z-index: 10000;
   border: 1px solid #000;
   position: fixed;
@@ -132,7 +132,7 @@ header.header {
   position: absolute;
   left: 375px;
   top: -1px;
-  background-color: #FCFCFC;
+  background-color: white;
 }
 
 .quit img {
@@ -145,9 +145,10 @@ header.header {
 #elements li img {
   display: inline-block;
   filter: grayscale();
+  margin-left: 8px;
 }
 
-#elements li a:hover {
+#elements li button:hover {
   text-decoration: underline;
 }
 
@@ -157,15 +158,15 @@ header.header {
   box-sizing: border-box;
 }
 
-#elements li a {
+#elements li button {
   font-size: 15px;
   font-family: 'Lazurski', serif;
   padding-bottom: 5px;
   display: inline;
   background-color: white;
   cursor: pointer;
+  border: none;
 }
-
 
 #infos ul li span {
   font-size: 16px;
@@ -198,14 +199,12 @@ header.header {
 }
 
 .item {
-  height: 300px;
   align-self: center;
   flex-basis: calc(20% - 30px);
   margin: 40px 40px 40px 40px;
   position: relative;
   display: inline-block;
   vertical-align: top;
-  height: 300px;
   min-width: 180px;
   text-align: center;
   font-family: 'Lazurski', serif;
@@ -222,21 +221,43 @@ a.small {
 }
 
 .item img  {
-  align-self: center
+  align-self: center;
   position: relative;
   display: block;
   width: 250px;
   filter: grayscale();
-  cursor: url(../images/слива.png), default;
-
+  cursor: url(../images/hand.png) !important;
+  box-shadow: 0 0 2px white;
 }
 
 img:hover {
   filter: none;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .draggable {
   cursor: pointer;
+}
+
+/* canvas {
+  display: inline-block;
+  }
+
+#drawingTool {
+width: 100%;
+height: 100%;
+{ */
+
+ .click {
+  background-color: black;
+  display: inherit;
+}
+
+.none {
+  display: none;
+}
+
+.display {
+  display: inherit;
 }

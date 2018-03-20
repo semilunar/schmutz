@@ -1,10 +1,4 @@
-
-
-
-
 var $draggable = $('.draggable').draggabilly();
-
-
 
 $('.item').click(function(){
   var name = $(this).data('name');
@@ -18,3 +12,12 @@ $('.item').click(function(){
   $('.thing-location').text(location);
 
 })
+
+
+ $('.quit').click(function () {
+   $(".panel").toggleClass('none'); return false;
+   });
+
+   $('.item').click(function () {
+     $(".panel").toggleClass('display'); return false;
+     });
