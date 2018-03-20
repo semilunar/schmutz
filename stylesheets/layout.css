@@ -59,7 +59,8 @@ nav.header-nav {
 }
 
 .logo {
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-left: 40px;
 }
 
 
@@ -226,7 +227,7 @@ a.small {
   display: block;
   width: 250px;
   filter: grayscale();
-  cursor: url(../images/hand.png) !important;
+  cursor: url(../images/cursor.png) !important;
   box-shadow: 0 0 2px white;
 }
 
