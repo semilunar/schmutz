@@ -93,8 +93,8 @@ ul.elements_title_menu {
   margin-bottom: 25px;
   }
 
-.title:hover {
-  cursor: url(../images/f.png), default;
+.title-name:hover {
+  cursor: url(../images/f.png);
 }
 
 header.header {
@@ -235,6 +235,7 @@ img:hover {
   filter: none;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  cursor: url(../images/cursor.png) !important;
 }
 
 .draggable {
