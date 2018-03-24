@@ -10,6 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #FCFCFC;
+  padding: 20px;
 }
 
 * {
@@ -62,48 +63,8 @@ nav.header-nav {
   margin-top: 15px;
 }
 
-
-span.title_menu:hover {
-  color: #FF00FF;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-  cursor: pointer;
-}
-
-.title_menu {
-  cursor: pointer;
-}
-
-ul.elements_title_menu {
-  display: none;
-  list-style: none;
-}
-
-.open > ul.elements_title_menu {
-  display: block;
-}
-
-.title {
-  font-size: 55px;
-  line-height: 80px;
-  color: black;
-  text-transform: uppercase;
-  margin: auto;
-  margin-bottom: 25px;
-  }
-
-.title-name:hover {
-  cursor: url(../images/f.png);
-}
-
-header.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
-  z-index: 100;
-  padding: 1px 12px 0 15px;
+.logo:hover {
+  cursor: url(../images/f.png), pointer;
 }
 
 .panel {
@@ -198,7 +159,7 @@ header.header {
   width: 100%;
 }
 
-.item {
+.element-item {
   align-self: center;
   flex-basis: calc(20% - 30px);
   margin: 40px 40px 40px 40px;
@@ -210,21 +171,12 @@ header.header {
   font-family: 'Lazurski', serif;
 }
 
-a.small {
-  height: 20%;
-  font-size: 12px;
-  line-height: 1.4;
-  padding-top: 7px;
-  color: #777;
-  display: inline-block;
 
-}
-
-.item img  {
+.element-item img  {
   align-self: center;
   position: relative;
   display: block;
-  width: 250px;
+  width: 120px;
   filter: grayscale();
   cursor: pointer;
   box-shadow: 0 0 2px white;
@@ -233,14 +185,14 @@ a.small {
 img:hover {
   filter: none;
   -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  transition: all .8s ease;
 }
 
 .draggable {
-  cursor:  move;
+  cursor: move;
 }
 
- .click {
+.click {
   background-color: black;
   display: inherit;
 }
@@ -265,4 +217,62 @@ img:hover {
 
 .rip {
   cursor: url('../images/rip.png'), pointer;
+}
+
+.button {
+  font-family: 'Lazurski', serif;
+  display: inline-block;
+  padding: 10px 18px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  background: #EEE;
+  border: none;
+  border-radius: 5px;
+  color: #222;
+  font-size: 16px;
+  text-shadow: 0 1px white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.button:active,
+.button.is-checked {
+ background-color: black;
+}
+
+.button.is-checked {
+  color: white;
+}
+
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  float: left;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.element-item {
+  position: relative;
+  float: left;
+  width: 250px;
+  height: 250px;
+  margin: 5px;
+  padding: 10px;
 }

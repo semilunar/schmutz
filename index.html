@@ -10,51 +10,28 @@
   <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
-  <img class="logo" src="images/logo.png">
-  <section class="intro">
-  <header class="header">
-    <nav class="header-nav">
-      <div id="elements" class="menu">
-      <span class="header-navleft title_menu">
-        <img src="images/menuburger.png">
-      </span>
-         <ul class='elements_title_menu'>
-          <li>
-            <img src="images/star.png">
-            <button data-filter=".artists" class=".filter-button-group">художники</button>
-          </li>
-          <li>
-            <img src="images/nostar.png">
-            <button data-filter=".unknown" class=".filter-button-group">неизвестно</button>
-          </li>
-          <li>
-            <img src="images/tag.png">
-            <button data-filter=".graffiti" class=".filter-button-group">граффити</button>
-          </li>
-          <li>
-            <img src="images/sticker.png">
-            <button data-filter=".sticker" class=".filter-button-group">стикер</button>
-          </li>
-          <li>
-            <img src="images/other.png">
-            <button data-filter=".other" class=".filter-button-group">прочее</button>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <a class="header-navright"></a>
-  </section>
 
+  <nav>
+    <img class="logo" src="images/logo.png">
+    <a class="header-navright">???</a>
+  </nav>
 
+  <div class="button-group filters-button-group">
+    <button class="button is-checked" data-filter="*">всё</button>
+    <button class="button" data-filter=".artists">художники</button>
+    <button class="button" data-filter=".unknown">неизвестно</button>
+    <button class="button" data-filter=".graffiti">граффити</button>
+    <button class="button" data-filter=".sticker">стикер</button>
+    <button class="button" data-filter=".other">другое</button>
+  </div>
 
-  <div id="hidden_content" class="panel draggable delete">
-      <div class="name delete">Об артефакте</div>
+  <div id="hidden_content" class="panel draggable">
+      <div class="name">Об артефакте</div>
       <div class="quit">
         <img src="images/cross.svg">
       </div>
-      <div id="infos" class="delete">
-        <ul class="delete">
+      <div id="infos">
+        <ul>
           <li>
             <span>Название:</span>
             <p class="thing-name">Угар</p>
@@ -77,220 +54,177 @@
 
     <main class="catalogue">
 
-  <section class="things-items grid">
-    <div data-name="Угар" data-author="Мой дед" data-year="2014" data-location="Зеленоград" class="item grid-item">
+    <div class="grid">
+
+    <div data-name="Угар" data-author="Мой дед" data-year="2014" data-location="Зеленоград" class="element-item">
       <img src="images/угар.jpg">
-      <a class="small">Угар</a>
     </div>
 
-    <div class="item grid-item artists" data-name="лицо" data-author="zimna crew" data-year="2016" data-location="бауманская ул., д. 31">
+    <div class="element-item artists" data-name="лицо" data-author="zimna crew" data-year="2016" data-location="бауманская ул., д. 31">
       <img src="images/ок12.jpg">
-      <a class="small">Лицо</a>
     </div>
 
-    <div class="item grid-item artists graffiti" data-name="лицо" data-author="zimna crew" data-year="2016" data-location="3-я улица строителей д. 2">
+    <div class="element-item artists graffiti" data-name="лицо" data-author="zimna crew" data-year="2016" data-location="3-я улица строителей д. 2">
       <img src="images/ок10.jpg">
-      <a class="small">Лицо</a>
     </div>
 
-    <div class="item grid-item artists graffiti" data-name="ХВ" data-author="zimna crew" data-year="2017" data-location="ст. м. войковская">
+    <div class="element-item artists graffiti" data-name="ХВ" data-author="zimna crew" data-year="2017" data-location="ст. м. войковская">
       <img src="images/хв.jpg">
-      <a class="small">ХВ</a>
     </div>
 
-    <div class="item grid-item artists graffiti rip" data-name="ЗАЧЕМ" data-author="гр. ЗАЧЕМ" data-year="2015" data-location="улица с. эйзенштейна дом 2">
+    <div class="element-item artists graffiti rip" data-name="ЗАЧЕМ" data-author="гр. ЗАЧЕМ" data-year="2015" data-location="улица с. эйзенштейна дом 2">
       <img src="images/зачем.jpg">
-      <a class="small">ЗАЧЕМ</a>
     </div>
 
-    <div class="item grid-item artists graffiti" data-name="-" data-author="OK (Олег, Zimna Crew)" data-year="2018" data-location="улица бауманская">
+    <div class="element-item artists graffiti" data-name="-" data-author="OK (Олег, Zimna Crew)" data-year="2018" data-location="улица бауманская">
       <img src="images/ок.jpg">
-      <a class="small">-</a>
     </div>
 
-    <div class="item grid-item artists graffiti" data-name="Лицо" data-author="zimna crew" data-year="2017" data-location="район зюзино">
+    <div class="element-item artists graffiti" data-name="Лицо" data-author="zimna crew" data-year="2017" data-location="район зюзино">
       <img src="images/ок7.jpg">
-      <a class="small">Лицо</a>
     </div>
 
-    <div class="item grid-item artists graffiti" data-name="sneksy tag" data-author="sneksy (sneekzy)" data-year="2017" data-location="хитровка">
+    <div class="element-item artists graffiti" data-name="sneksy tag" data-author="sneksy (sneekzy)" data-year="2017" data-location="хитровка">
       <img src="images/sneksy.png">
-      <a class="small">sneksy tag</a>
     </div>
 
 
-        <div class="item grid-item artists sticker" data-name="spacernamerjuicecozekсартек" data-author="A.D.E.D." data-year="2017" data-location="ул.сергия радонежского, д. 12">
-          <img src="images/spacer7.png">
-          <a class="small">SPACER NAMER JUICE COZEK САРTEK</a>
-        </div>
+    <div class="element-item artists sticker" data-name="spacernamerjuicecozekсартек" data-author="A.D.E.D." data-year="2017" data-location="ул.сергия радонежского, д. 12">
+      <img src="images/spacer7.png">
+    </div>
 
-        <div class="item grid-item artists graffiti" data-name="COZEK731" data-author="Mike “Cozek731” Rudaev" data-year="2018" data-location="ленинградский вокзал">
-          <img src="images/cozek.jpg">
-          <a class="small">COZEK731</a>
-        </div>
+    <div class="element-item artists graffiti" data-name="COZEK731" data-author="Mike “Cozek731” Rudaev" data-year="2018" data-location="ленинградский вокзал">
+      <img src="images/cozek.jpg">
+    </div>
 
-        <div class="item grid-item artists sticker" data-name="COZEK731" data-author="Mike “Cozek731” Rudaev" data-year="2018" data-location="3-й самотечный переулок">
-          <img src="images/cozek3.png">
-          <a class="small">COZEK731</a>
-        </div>
+    <div class="element-item artists sticker" data-name="COZEK731" data-author="Mike “Cozek731” Rudaev" data-year="2018" data-location="3-й самотечный переулок">
+      <img src="images/cozek3.png">
+    </div>
 
-        <div class="item grid-item artists sticker" data-name="spacernamerjuicecozekсартек" data-author="A.D.E.D." data-year="2016" data-location="">
-          <img src="images/spacer2.jpg">
-          <a class="small">SPACER NAMER JUICE COZEK САРTEK</a>
-        </div>
+    <div class="element-item artists sticker" data-name="spacernamerjuicecozekсартек" data-author="A.D.E.D." data-year="2016" data-location="">
+      <img src="images/spacer2.jpg">
+    </div>
 
-    <div class="item grid-item unknown graffiti" data-name="Спорт" data-author="-" data-year="2017" data-location="москва">
+    <div class="element-item unknown graffiti" data-name="Спорт" data-author="-" data-year="2017" data-location="москва">
       <img src="images/sport.jpg">
-      <a class="small">Спорт</a>
     </div>
 
-    <div class="item grid-item unknown graffiti" data-name="KAIF / MOSCOW" data-author="-" data-year="2018" data-location="хохловский переулок, д. 16">
+    <div class="element-item unknown graffiti" data-name="KAIF / MOSCOW" data-author="-" data-year="2018" data-location="хохловский переулок, д. 16">
       <img src="images/star.jpg">
-      <a class="small">-</a>
     </div>
 
-    <div class="item grid-item artists graffiti" data-name="nook-tag" data-author="NOOK" data-year="2017–настоящее время" data-location="ст. м. китай-город">
+    <div class="element-item artists graffiti" data-name="nook-tag" data-author="NOOK" data-year="2017–настоящее время" data-location="ст. м. китай-город">
       <img src="images/nook.jpg">
-      <a class="small">NOOK tag</a>
     </div>
 
-    <div class="item grid-item artists other" data-name="Шахматный конь" data-author="Соколов" data-year="2015" data-location="улица бахрушина дом 15">
+    <div class="element-item artists other" data-name="Шахматный конь" data-author="Соколов" data-year="2015" data-location="улица бахрушина дом 15">
       <img src="images/sokolov2.png">
-      <a class="small">Шахматный конь</a>
     </div>
 
-    <div class="item grid-item artists graffiti" data-name="nook-tag" data-author="NOOK" data-year="2018" data-location="м. пионерская д. 30">
+    <div class="element-item artists graffiti" data-name="nook-tag" data-author="NOOK" data-year="2018" data-location="м. пионерская д. 30">
       <img src="images/nook3.jpg">
-      <a class="small">NOOK-tag</a>
     </div>
 
-    <div class="item grid-item artists graffiti" data-name="лицо" data-author="zimna crew" data-year="2015" data-location="москва">
+    <div class="element-item artists graffiti" data-name="лицо" data-author="zimna crew" data-year="2015" data-location="москва">
       <img src="images/ок11.jpg">
-      <a class="small">Лицо</a>
     </div>
 
-    <div class="item grid-item artists graffiti" data-name="хв" data-author="zimna crew" data-year="2017" data-location="москва">
+    <div class="element-item artists graffiti" data-name="хв" data-author="zimna crew" data-year="2017" data-location="москва">
       <img src="images/хв3.jpg">
-      <a class="small">ХВ</a>
     </div>
 
-    <div class="item grid-item artists graffiti" data-name="-" data-author="-" data-year="2017" data-location="чистопрудный бульвар, д. 23">
+    <div class="element-item artists graffiti" data-name="-" data-author="-" data-year="2017" data-location="чистопрудный бульвар, д. 23">
       <img src="images/triangle.jpg">
-      <a class="small">-</a>
     </div>
 
-    <div class="item grid-item artists graffiti rip" data-name="хв" data-author="zimna crew" data-year="2016" data-location="проспект вернадского, д. 50 стр. 4">
+    <div class="element-item artists graffiti rip" data-name="хв" data-author="zimna crew" data-year="2016" data-location="проспект вернадского, д. 50 стр. 4">
       <img src="images/хв2.jpg">
-      <a class="small">ХВ</a>
     </div>
 
-    <div class="item grid-item unknown sticker" data-name="Лиза" data-author="-" data-year="2017" data-location="ст. м. арбатская">
+    <div class="element-item unknown sticker" data-name="Лиза" data-author="-" data-year="2017" data-location="ст. м. арбатская">
       <img src="images/mona.jpg">
-      <a class="small">Лиза</a>
     </div>
 
-    <div class="item grid-item artists graffiti" data-name="хв" data-author="zimna crew" data-year="2016" data-location="москва">
+    <div class="element-item artists graffiti" data-name="хв" data-author="zimna crew" data-year="2016" data-location="москва">
       <img src="images/ок4.jpg">
-      <a class="small">Лицо</a>
     </div>
 
-    <div class="item grid-item artists other" data-name="Шахматный конь" data-author="Соколов" data-year="2015" data-location="улица бахрушина дом 15">
+    <div class="element-item artists other" data-name="Шахматный конь" data-author="Соколов" data-year="2015" data-location="улица бахрушина дом 15">
       <img src="images/sokolov3.png">
-      <a class="small">Шахматный конь</a>
     </div>
 
-    <div class="item grid-item artists graffiti" data-name="Лицо" data-author="zimna crew" data-year="2017" data-location="улица лесная">
+    <div class="element-item artists graffiti" data-name="Лицо" data-author="zimna crew" data-year="2017" data-location="улица лесная">
       <img src="images/ок9.jpg">
-      <a class="small">Лицо</a>
     </div>
 
-    <div class="item grid-item artists graffiti" data-name="nook tag" data-author="NOOK" data-year="2017" data-location="москва">
+    <div class="element-item artists graffiti" data-name="nook tag" data-author="NOOK" data-year="2017" data-location="москва">
       <img src="images/nook6.jpg">
-      <a class="small">NOOK tag</a>
     </div>
 
-    <div class="item grid-item artists graffiti" data-name="Лицо" data-author="zimna crew" data-year="2017" data-location="улица лесная">
+    <div class="element-item artists graffiti" data-name="Лицо" data-author="zimna crew" data-year="2017" data-location="улица лесная">
       <img src="images/ок13.jpg">
-      <a class="small">Лицо</a>
     </div>
 
-    <div class="item grid-item artists graffiti" data-name="-" data-author="OK (Олег, Zimna Crew)" data-year="2018" data-location="ул. бауманская">
+    <div class="element-item artists graffiti" data-name="-" data-author="OK (Олег, Zimna Crew)" data-year="2018" data-location="ул. бауманская">
       <img src="images/oleg.jpg">
-      <a class="small">OK</a>
     </div>
 
-    <div class="item grid-item unknown graffiti rip" data-name="Спорт" data-author="-" data-year="2016" data-location="ул. солянка">
+    <div class="element-item unknown graffiti rip" data-name="Спорт" data-author="-" data-year="2016" data-location="ул. солянка">
       <img src="images/sport2.jpg">
-      <a class="small">Спорт</a>
     </div>
 
-    <div class="item grid-item unknown graffiti rip" data-name="-" data-author="-" data-year="2018" data-location="покровский бульвар, д. 12">
+    <div class="element-item unknown graffiti rip" data-name="-" data-author="-" data-year="2018" data-location="покровский бульвар, д. 12">
       <img src="images/unknown1.jpg">
-      <a class="small">-</a>
     </div>
 
-    <div class="item grid-item artists graffiti" data-name="Лицо" data-author="zimna crew" data-year="2017" data-location="улица лесная, д, 5 корп. 1">
+    <div class="element-item artists graffiti" data-name="Лицо" data-author="zimna crew" data-year="2017" data-location="улица лесная, д, 5 корп. 1">
       <img src="images/ок3.jpg">
-      <a class="small">Лицо</a>
     </div>
 
-    <div class="item grid-item unknown sticker" data-name="-" data-author="-" data-year="2018" data-location="подколокольный переулок, д. 20">
+    <div class="element-item unknown sticker" data-name="-" data-author="-" data-year="2018" data-location="подколокольный переулок, д. 20">
       <img src="images/minus.jpg">
-      <a class="small">-</a>
     </div>
 
-    <div class="item grid-item artists graffiti" data-name="ЖУК" data-author="-" data-year="2015" data-location="ул. крымский вал">
+    <div class="element-item unknown graffiti" data-name="ЖУК" data-author="-" data-year="2015" data-location="ул. крымский вал">
       <img src="images/zhuk.jpg">
-      <a class="small">ЖУК</a>
     </div>
 
-    <div class="item grid-item unknown sticker" data-name="ЕГО ТУТ НЕТ" data-author="-" data-year="2017" data-location="подколокольный переулок, д. 23">
+    <div class="element-item unknown sticker" data-name="ЕГО ТУТ НЕТ" data-author="-" data-year="2017" data-location="подколокольный переулок, д. 23">
       <img src="images/no.jpg">
-      <a class="small">ЕГО ТУТ НЕТ</a>
     </div>
 
-    <div class="item grid-item artists graffiti" data-name="Лицо" data-author="zimna crew" data-year="2017" data-location="улица лесная">
+    <div class="element-item artists graffiti" data-name="Лицо" data-author="zimna crew" data-year="2017" data-location="улица лесная">
       <img src="images/ок2.jpg">
-      <a class="small">Лицо</a>
     </div>
 
-    <div class="item grid-item unknown graffiti" data-name="-" data-author="-" data-year="2017" data-location="ул. земляной вал, туалет кофейни double b">
+    <div class="element-item unknown graffiti" data-name="-" data-author="-" data-year="2017" data-location="ул. земляной вал, туалет кофейни double b">
       <img src="images/unknown_wc.jpg">
-      <a class="small">-</a>
     </div>
 
-    <div class="item grid-item unknown sticker" data-name="Лиза" data-author="-" data-year="2018" data-location="хохловский переулок, д. 22">
+    <div class="element-item unknown sticker" data-name="Лиза" data-author="-" data-year="2018" data-location="хохловский переулок, д. 22">
       <img src="images/lisa2.jpg">
-      <a class="small">Лиза</a>
     </div>
 
-    <div class="item grid-item artists sticker" data-name="spacernamerjuicecozekсартек" data-author="A.D.E.D." data-year="2017" data-location="ул.сергия радонежского, д. 12">
+    <div class="element-item artists sticker" data-name="spacernamerjuicecozekсартек" data-author="A.D.E.D." data-year="2017" data-location="ул. сергия радонежского, д. 12">
       <img src="images/spacer1.jpg">
-      <a class="small">SPACER NAMER JUICE COZEK САРTEK</a>
     </div>
 
-    <div class="item grid-item artists graffiti" data-name="sneksy tag" data-author="sneksy (sneekzy)" data-year="2017" data-location="хитровка">
+    <div class="element-item artists graffiti" data-name="sneksy tag" data-author="sneksy (sneekzy)" data-year="2017" data-location="хитровка">
       <img src="images/sneksy3.jpg">
-      <a class="small">sneksy tag</a>
     </div>
 
-    <div class="item grid-item artists graffiti" data-name="-" data-author="OK (Олег, Zimna Crew)" data-year="2018" data-location="ул. бауманская">
+    <div class="element-item artists graffiti" data-name="-" data-author="OK (Олег, Zimna Crew)" data-year="2018" data-location="ул. бауманская">
       <img src="images/oleg2.jpg">
-      <a class="small">OK</a>
     </div>
 
-  </section>
-
-
-      <div class="text">
-        мимо карамельной латиницы олдскула; мимо импотентского, по сути, мертворожденного, стритарта, за который всегда хочется извиниться; тошнотворных патриотических муралов, рекламных «инстаграмабл» фресок; мимо иллюстраций, отскейленных до фасадов многоэтажек; мимо неоэкспрессионизма/беспредметности/графдизайна, выплеснувшихся за неимением просторной мастерской на улицы; <...> мимо всех этих великовозрастных “русских бэнкси”, “культовых команд”, самовлюбленных “пионеров русского стритарта”, – что-то другое, пока безымянное, зародилось и медленно движется на периферии натренированного не замечать визуальный спам зрения, наизнанке города. и если есть слово, то это <br> «ритуальность».
-      </div>
-
-  <!-- <div class="draggable" style="width: 404px; height: 500px; background-color: black; margin-top: 100px; left: 300px; position: fixed; z-index: 109999"></div>
-  <div class="draggable" style="width: 600px; height: 890px; background-color: black; margin-top: 120px; left: 500px; position: fixed; z-index: 10000"></div> -->
-
+    </div>
 
 </main>
+  <!-- <div class="text">
+        мимо карамельной латиницы олдскула; мимо импотентского, по сути, мертворожденного, стритарта, за который всегда хочется извиниться; тошнотворных патриотических муралов, рекламных «инстаграмабл» фресок; мимо иллюстраций, отскейленных до фасадов многоэтажек; мимо неоэкспрессионизма/беспредметности/графдизайна, выплеснувшихся за неимением просторной мастерской на улицы; <...> мимо всех этих великовозрастных “русских бэнкси”, “культовых команд”, самовлюбленных “пионеров русского стритарта”, – что-то другое, пока безымянное, зародилось и медленно движется на периферии натренированного не замечать визуальный спам зрения, наизнанке города. и если есть слово, то это <br> «ритуальность».
+      </div> -->
+  <!-- <div class="draggable" style="width: 404px; height: 500px; background-color: black; margin-top: 100px; left: 300px; position: fixed; z-index: 109999"></div>
+  <div class="draggable" style="width: 600px; height: 890px; background-color: black; margin-top: 120px; left: 500px; position: fixed; z-index: 10000"></div> -->
 
 
 
@@ -301,23 +235,16 @@
 <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.js"></script>
 <script src="javascripts/script.js"></script>
 
-<script>
-var menuElem = document.getElementById('elements');
-var titleElem = menuElem.querySelector('.title_menu');
-titleElem.onclick = function() {
-  menuElem.classList.toggle('open');
-};
-</script>
 
 
-<script>
+<!-- <script>
 var $grid = $('.grid').isotope({
 
   $('.filter-button-group').on( 'click', 'button', function() {
   var filterValue = $(this).attr('data-filter');
   $grid.isotope({ filter: filterValue });
 });
-</script>
+</script> -->
 
 </body>
 </html>
