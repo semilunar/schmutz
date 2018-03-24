@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 var $draggable = $('.draggable').draggabilly();
 
 $('.item').click(function(){
@@ -13,7 +15,6 @@ $('.item').click(function(){
 
 })
 
-
  $('.quit').click(function () {
    $(".panel").toggleClass('none'); return false;
    });
@@ -21,3 +22,5 @@ $('.item').click(function(){
    $('.item').click(function () {
      $(".panel").toggleClass('display'); return false;
      });
+
+});

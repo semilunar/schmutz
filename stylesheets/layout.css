@@ -235,7 +235,6 @@ img:hover {
   filter: none;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  cursor: url(../images/cursor.png) !important;
 }
 
 .draggable {

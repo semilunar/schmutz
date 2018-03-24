@@ -21,23 +21,23 @@
          <ul class='elements_title_menu'>
           <li>
             <img src="images/star.png">
-            <button data-filter=".artists">художники</button>
+            <button data-filter=".artists" class=".filter-button-group">художники</button>
           </li>
           <li>
             <img src="images/nostar.png">
-            <button data-filter=".unknown">неизвестно</button>
+            <button data-filter=".unknown" class=".filter-button-group">неизвестно</button>
           </li>
           <li>
             <img src="images/tag.png">
-            <button data-filter=".graffiti">граффити</button>
+            <button data-filter=".graffiti" class=".filter-button-group">граффити</button>
           </li>
           <li>
             <img src="images/sticker.png">
-            <button data-filter=".sticker">стикер</button>
+            <button data-filter=".sticker" class=".filter-button-group">стикер</button>
           </li>
           <li>
             <img src="images/other.png">
-            <button data-filter=".other">прочее</button>
+            <button data-filter=".other" class=".filter-button-group">прочее</button>
           </li>
         </ul>
       </div>
@@ -78,7 +78,7 @@
     <main class="catalogue">
 
     <h1 align="center" class="title">
-      <a class="title-name">Архив</a>
+      <a class="title-name">каталог</a>
     </h1>
 
   <section class="things-items grid">
@@ -307,27 +307,17 @@ var titleElem = menuElem.querySelector('.title_menu');
 titleElem.onclick = function() {
   menuElem.classList.toggle('open');
 };
-
 </script>
 
-<script>
-var panel = document.getElementById("hidden_content");
-var item = menuElem.querySelector('.item');
-item.onclick = function() {
-  panel.classList.toggle('open');
-};
 
-</script>
-
-<script>
+<!-- <script>
 var $grid = $('.grid').isotope({
 
   $('.filter-button-group').on( 'click', 'button', function() {
   var filterValue = $(this).attr('data-filter');
   $grid.isotope({ filter: filterValue });
 });
-
-</script>
+</script> -->
 
 </body>
 </html>
