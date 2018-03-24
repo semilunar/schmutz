@@ -23,17 +23,9 @@ a {
 
 }
 
-p {
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-}
-
 li {
   font-size: 20px;
 }
-
 
 .intro {
   height: 5vh;
@@ -146,7 +138,7 @@ nav.header-nav {
   align-items: baseline;
 }
 
-.things-items {
+.grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -176,6 +168,7 @@ nav.header-nav {
   position: relative;
   display: block;
   width: 200px;
+  height: auto;
   filter: grayscale();
   cursor: pointer;
   box-shadow: 0 0 2px white;
@@ -228,7 +221,6 @@ img:hover {
   border: none;
   color: #222;
   font-size: 18px;
-  text-shadow: 0 1px white;
   cursor: pointer;
 }
 
@@ -270,6 +262,6 @@ img:hover {
   float: left;
   width: 250px;
   height: 250px;
-  margin: 5px;
+  margin: 30px;
   padding: 10px;
 }
