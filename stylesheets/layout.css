@@ -204,10 +204,6 @@ img:hover {
   cursor: url('../images/cursor.png'), pointer;
 }
 
-.rip {
-  cursor: url('../images/rip.png'), pointer;
-}
-
 .button {
   font-family: 'Lazurski', serif;
   display: inline-block;
