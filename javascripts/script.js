@@ -8,6 +8,8 @@ $('.element-item').click(function(){
   var year = $(this).data('year');
   var location = $(this).data('location');
 
+  $(".panel").removeClass('none');
+
   $('.thing-name').text(name);
   $('.thing-author').text(author);
   $('.thing-year').text(year);
@@ -16,11 +18,11 @@ $('.element-item').click(function(){
 })
 
  $('.quit').click(function () {
-   $(".panel").toggleClass('none'); return false;
+    $(".panel").addClass('none');
    });
 
    $('.element-item').click(function () {
      $(".panel").toggleClass('display'); return false;
      });
 
-})
+});

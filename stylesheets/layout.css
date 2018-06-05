@@ -27,6 +27,10 @@ li {
   font-size: 20px;
 }
 
+span.reminder {
+  margin: auto;
+}
+
 .intro {
   height: 60px;
   background-position: center;
@@ -118,6 +122,8 @@ li {
   border: none;
 }
 
+button:focus { outline:0 !important; }
+
 #infos ul li span {
   font-size: 16px;
   width: 90px;
@@ -187,7 +193,7 @@ img:hover {
 }
 
 .none {
-  display: none;
+  display: none !important;
 }
 
 .display {
